@@ -46,13 +46,12 @@ const UploadContainer = () => {
     e.preventDefault();
   };
 
-  const handleDrop = (e) => {
+  const handleDrop = (e) =>{
     e.preventDefault();
     const droppedFiles = e.dataTransfer.files;
     setSelectedFile(droppedFiles);
     handleFileSelection(droppedFiles);
   };
-  // console.log(exceldata);
   return (
     <>
       <div 
